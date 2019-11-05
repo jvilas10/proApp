@@ -1,7 +1,4 @@
 import { Component } from '@angular/core';
-import { Pro, AppInfo, DeployInfo } from '@ionic-native/pro';
-
-
 
 @Component({
   selector: 'app-tab1',
@@ -10,14 +7,6 @@ import { Pro, AppInfo, DeployInfo } from '@ionic-native/pro';
 })
 export class Tab1Page {
 
-  constructor(private pro: Pro) { }
- this.pro.getAppInfo().then((res: AppInfo) => {
-    console.log(res);
-  });
-  
-  // Get live update info
-this.pro.deploy.info().then((res: DeployInfo) => {
-    console.log(res);
-  });
+  constructor() {}
 
 }
